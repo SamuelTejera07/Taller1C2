@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuPrimerCuadrante"
+        android:title="Generar Puntos Primer Cuadrante"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menuSegundoCuadrante"
+        android:title="Generar Puntos Segundo Cuadrante"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menuTercerCuadrante"
+        android:title="Generar Puntos Tercer Cuadrante"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menuCuartoCuadrante"
+        android:title="Generar Puntos Cuarto Cuadrante"
+        app:showAsAction="never" />
+
+</menu>

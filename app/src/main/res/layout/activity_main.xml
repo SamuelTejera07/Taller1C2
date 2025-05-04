@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/layoutPrincipal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puntos en el Plano Cartesiano"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPunto1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Punto 1 (x1, y1):"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
+
+    <EditText
+        android:id="@+id/etX1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="x1"
+        android:inputType="numberDecimal|numberSigned"
+        app:layout_constraintEnd_toStartOf="@+id/etY1"
+        app:layout_constraintStart_toEndOf="@+id/tvPunto1"
+        app:layout_constraintTop_toTopOf="@+id/tvPunto1"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPunto1" />
+
+    <EditText
+        android:id="@+id/etY1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="y1"
+        android:inputType="numberDecimal|numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etX1"
+        app:layout_constraintTop_toTopOf="@+id/tvPunto1"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPunto1" />
+
+    <TextView
+        android:id="@+id/tvPunto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Punto 2 (x2, y2):"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPunto1" />
+
+    <EditText
+        android:id="@+id/etX2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="x2"
+        android:inputType="numberDecimal|numberSigned"
+        app:layout_constraintEnd_toStartOf="@+id/etY2"
+        app:layout_constraintStart_toEndOf="@+id/tvPunto2"
+        app:layout_constraintTop_toTopOf="@+id/tvPunto2"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPunto2" />
+
+    <EditText
+        android:id="@+id/etY2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="y2"
+        android:inputType="numberDecimal|numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etX2"
+        app:layout_constraintTop_toTopOf="@+id/tvPunto2"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPunto2" />
+
+    <Button
+        android:id="@+id/btnPendiente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:text="Pendiente"
+        app:layout_constraintEnd_toStartOf="@+id/btnPuntoMedio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPunto2" />
+
+    <Button
+        android:id="@+id/btnPuntoMedio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="Punto Medio"
+        app:layout_constraintEnd_toStartOf="@+id/btnEcuacionRecta"
+        app:layout_constraintStart_toEndOf="@+id/btnPendiente"
+        app:layout_constraintTop_toTopOf="@+id/btnPendiente" />
+
+    <Button
+        android:id="@+id/btnEcuacionRecta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="Ec. Recta"
+        app:layout_constraintEnd_toStartOf="@+id/btnCuadrantes"
+        app:layout_constraintStart_toEndOf="@+id/btnPuntoMedio"
+        app:layout_constraintTop_toTopOf="@+id/btnPendiente" />
+
+    <Button
+        android:id="@+id/btnCuadrantes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Cuadrantes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnEcuacionRecta"
+        app:layout_constraintTop_toTopOf="@+id/btnPendiente" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:background="#F0F0F0"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPendiente" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

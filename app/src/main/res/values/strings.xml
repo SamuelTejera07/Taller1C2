@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Taller1C2</string>
+    <string name="titulo">Puntos en el Plano Cartesiano</string>
+    <string name="punto1">Punto 1 (x1, y1):</string>
+    <string name="punto2">Punto 2 (x2, y2):</string>
+    <string name="pendiente">Pendiente</string>
+    <string name="punto_medio">Punto Medio</string>
+    <string name="ecuacion_recta">Ec. Recta</string>
+    <string name="cuadrantes">Cuadrantes</string>
+    <string name="primer_cuadrante">Generar Puntos Primer Cuadrante</string>
+    <string name="segundo_cuadrante">Generar Puntos Segundo Cuadrante</string>
+    <string name="tercer_cuadrante">Generar Puntos Tercer Cuadrante</string>
+    <string name="cuarto_cuadrante">Generar Puntos Cuarto Cuadrante</string>
+    <string name="aleatorio">Aleatorio</string>
+    <string name="cambiar_signo">Cambiar signo</string>
+    <string name="valores_numericos">Por favor ingrese valores numéricos válidos</string>
+    <string name="pendiente_infinita">La pendiente es infinita (línea vertical)</string>
+    <string name="numero_valido">Ingrese un número válido primero</string>
+    <string name="puntos_generados">Puntos generados en el cuadrante %1$d</string>
+</resources>
